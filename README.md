@@ -25,23 +25,18 @@ Resources:
 * [@IdeaVim](https://twitter.com/ideavim) in Twitter
 
 
-Installation
+Setup
 ------------
 
-Use the IDE's plugin manager to install the latest version of the plugin.
-Start the IDE normally and enable the Vim emulation using "Tools | Vim
-Emulator" menu item. At this point you must use Vim keystrokes in all editors.
+- IdeaVim can be installed via `Settings | Plugins`.
+See [instructions](https://www.jetbrains.com/help/idea/managing-plugins.html#).
 
-If you wish to disable the plugin, select the "Tools | Vim Emulator" menu so
-it is unchecked. At this point your IDE will work with its regular keyboard
-shortcuts.
+- Use `Tools | Vim Emulator` to enable or disable emulation.
 
-Keyboard shortcut conflicts between the Vim emulation and the IDE can be
-resolved via "File | Settings | Editor | Vim Emulation", "File | Settings |
-Keymap" on Linux & Windows, and via "Preferences | Editor | Vim Emulation",
-"Preferences | Keymap" on macOS. They can also be resolved by key-mapping
-commands in your ~/.ideavimrc file.
-
+- Shortcut conflicts can be resolved using:
+     - Linux & Windows: `File | Settings | Editor | Vim Emulation` & `File | Settings | Keymap`.
+     - macOS: `Preferences | Editor | Vim Emulation` & `Preferences | Keymap`.
+     - `~/.ideavimrc` file.
 
 Get Early Access
 -------------------
@@ -49,7 +44,9 @@ Get Early Access
 Would you like to try new features and fixes? Join the Early Access Program and
 receive EAP builds as updates!  
 
-1. Click the IdeaVim icon in the status bar | `EAP` | `Get Early Access...`
+1. Click the <img src="resources/META-INF/pluginIcon_noBorders.svg" width="16" height="16" alt="icon"/> IdeaVim
+icon in the status bar  | `EAP` | `Get Early Access...`
+
 
 Or subscribe to EAP updates manually:
 
@@ -57,7 +54,7 @@ Or subscribe to EAP updates manually:
 2. Click the gear icon :gear:, select `Manage Plugin Repositories`, and add the following url:
  `https://plugins.jetbrains.com/plugins/eap/ideavim`
 
-See [the changelog](CHANGES.md) for the list of hot unreleased features.
+See [the changelog](CHANGES.md) for the list of unreleased features.
 
 It is important to distinguish EAP builds from traditional pre-release software.
 Please note that the quality of EAP versions may at times be way below even
@@ -115,19 +112,19 @@ See also:
 Files
 -----
 
-* ~/.ideavimrc
+* `~/.ideavimrc`
     * Your IdeaVim-specific Vim initialization commands
 
-You can read your ~/.vimrc file from ~/.ideavimrc with this command:
+You can read your `~/.vimrc` file from `~/.ideavimrc` with this command:
 
     source ~/.vimrc
 
-Note, that IdeaVim currently parses ~/.ideavimrc file via simple pattern matching.
+Note, that IdeaVim currently parses `~/.ideavimrc` file via simple pattern matching.
 See [VIM-669](https://youtrack.jetbrains.com/issue/VIM-669) for proper parsing
 of VimL files.
 
 Also note that if you have overridden the `user.home` JVM option, this
-will affect where IdeaVim looks for your .ideavimrc file. For example, if you
+will affect where IdeaVim looks for your `.ideavimrc` file. For example, if you
 have `-Duser.home=/my/alternate/home` then IdeaVim will source
 `/my/alternate/home/.ideavimrc` instead of `~/.ideavimrc`.
 
