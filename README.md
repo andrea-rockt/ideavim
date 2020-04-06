@@ -29,14 +29,16 @@ Setup
 ------------
 
 - IdeaVim can be installed via `Settings | Plugins`.
-See [instructions](https://www.jetbrains.com/help/idea/managing-plugins.html#).
+See [detailed instructions](https://www.jetbrains.com/help/idea/managing-plugins.html#).
 
 - Use `Tools | Vim Emulator` to enable or disable emulation.
 
+- Use `~/.ideavimrc` file as an analog of `~/.vimrc` ([details](#Files)).
+
 - Shortcut conflicts can be resolved using:
-     - Linux & Windows: `File | Settings | Editor | Vim Emulation` & `File | Settings | Keymap`.
-     - macOS: `Preferences | Editor | Vim Emulation` & `Preferences | Keymap`.
-     - `~/.ideavimrc` file.
+     - Linux & Windows: `File | Settings | Editor | Vim Emulation` & `File | Settings | Keymap`,
+     - macOS: `Preferences | Editor | Vim Emulation` & `Preferences | Keymap`,
+     - regular vim mappings in the  `~/.ideavimrc` file.
 
 Get Early Access
 -------------------
