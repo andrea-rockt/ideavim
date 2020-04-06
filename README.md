@@ -193,6 +193,20 @@ Available extensions:
 Changes to the IDE
 ------------------
 
+### Executing IDE Actions
+
+IdeaVim adds two commands for listing and executing arbitrary IDE actions as
+Ex commands or via `:map` command mappings:
+
+* `:actionlist [pattern]`
+    * Find IDE actions by name or keymap pattern (E.g. `:actionlist extract`, `:actionlist <C-D`)
+* `:action {name}`
+    * Execute an action named `NAME`
+
+For example, here `\r` is mapped to the Reformat Code action:
+
+    :map \r :action ReformatCode<CR>
+
 ### Undo/Redo
 
 The IdeaVim plugin uses the undo/redo functionality of the IntelliJ Platform,
@@ -210,21 +224,6 @@ switched by default. The usage of the Vim emulator in dialog windows is an area 
 improvement.
 
 See also [unresolved escape issues](https://youtrack.jetbrains.com/issues/VIM?q=%23Unresolved+Help+topic%3A+i_Esc).
-
-### Executing IDE Actions
-
-IdeaVim adds two commands for listing and executing arbitrary IDE actions as
-Ex commands or via `:map` command mappings:
-
-* `:actionlist [pattern]`
-    * Find IDE actions by name or keymap pattern (E.g. `:actionlist extract`, `:actionlist <C-D`)
-* `:action {name}`
-    * Execute an action named `NAME`
-
-For example, here `\r` is mapped to the Reformat Code action:
-
-    :map \r :action ReformatCode<CR>
-
 
 Contributing
 ------------
